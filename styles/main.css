@@ -1235,6 +1235,7 @@ footer .footer-container .credits-bottom {
   }
   footer .footer-container .lower-bottom-final .lower-container {
     margin-left: -10px;
+    margin: 10px;
   }
   footer .footer-container .lower-bottom-final .lower-container .lower-left {
     display: -webkit-box;
@@ -1257,13 +1258,13 @@ footer .footer-container .credits-bottom {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin: 0 20px;
+    margin: 0 10px;
   }
   footer .footer-container .lower-bottom-final .lower-container .lower-left .left-logo-text .text {
     margin-left: 20px;
   }
   footer .footer-container .lower-bottom-final .lower-container .lower-left .left-logo-text .text .name {
-    font-size: 12px;
+    font-size: 10px;
     text-transform: uppercase;
     font-weight: bold;
   }
@@ -1352,6 +1353,12 @@ footer .footer-container .credits-bottom {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  footer .footer-container .lower-bottom-final .lower-container .lower-left .left-logo-text {
+    margin: 0 20px;
+  }
+  footer .footer-container .lower-bottom-final .lower-container .lower-left .left-logo-text .text .name {
+    font-size: 12px;
   }
   footer .footer-container .lower-bottom-final .lower-container .lower-right {
     margin-top: initial;

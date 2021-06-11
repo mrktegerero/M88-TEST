@@ -325,6 +325,7 @@ footer {
         padding-bottom: 1.5rem;
         .lower-container {
           margin-left: -10px;
+          margin: 10px;
           .lower-left {
             display: flex;
             align-items: center;
@@ -333,11 +334,11 @@ footer {
               display: flex;
               align-items: center;
               justify-content: center;
-              margin: 0 20px;
+              margin: 0 10px;
               .text {
                 margin-left: 20px;
                 .name {
-                  font-size: 12px;
+                  font-size: 10px;
                   text-transform: uppercase;
                   font-weight: bold;
                 }
@@ -406,6 +407,16 @@ footer {
           display: flex;
           align-items: center;
           justify-content: space-between;
+          .lower-left{
+            .left-logo-text{
+              margin: 0 20px;
+              .text{
+                .name{
+                  font-size: 12px;
+                }
+              }
+            }
+          }
           .lower-right {
             margin-top: initial;
             justify-content: center;
