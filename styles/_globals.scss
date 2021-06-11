@@ -1,0 +1,41 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 250ms ease;
+}
+
+$dark-bg: #080808;
+$white-txt: #FDFDFD;
+
+body {
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
+  background-color: #31405F;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+  font-family: 'Poppins', sans-serif;
+  color: $white-txt;
+}
+button {
+  background: $white-txt;
+  color: $dark-bg;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  &:hover {
+    opacity: 0.8 !important;
+  }
+}
+
+li{
+  list-style: none;
+}

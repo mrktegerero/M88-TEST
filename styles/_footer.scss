@@ -1,0 +1,417 @@
+footer {
+  background-color: black;
+  color: #b5b5b5;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: relative;
+  .footer-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    .desktop-view {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 10px;
+      padding: 1.5rem 0;
+      border-bottom: 1px dashed #ffcd00;
+      .text {
+        margin-left: 5px;
+        text-decoration: underline;
+        background-color: transparent;
+        font-weight: bold;
+        color: #b5b5b5;
+      }
+    }
+    .paymethods {
+      padding: 1.5rem 0;
+      font-size: clamp(0.9rem, 1vw, 2rem);
+      .paytext {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .paylogos {
+        margin: auto;
+        width: 100%;
+        padding: 15px 0;
+        .logoabove {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .logoimg {
+            margin: 0 0.5rem;
+          }
+          .logoimg1 {
+            width: 35%;
+          }
+          .logoimg2 {
+            width: 15%;
+          }
+          .logoimg3 {
+            width: 28%;
+          }
+        }
+        .logounder {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 15px;
+          margin-bottom: 5px;
+          .logoimg4 {
+            width: 30%;
+          }
+        }
+      }
+      .socialmedia {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0.2rem 0;
+        .aSocial {
+          margin: 0 1px;
+          cursor: pointer;
+          width: 100%;
+          .socialimg1 {
+            width: 17%;
+            margin-left: 80%;
+            &:hover {
+              background: url("images/Social_Footer_YouTube_SocialMedia.svg")
+                no-repeat;
+            }
+          }
+          .socialimg2 {
+            width: 17%;
+            margin-right: 45%;
+            &:hover {
+              background: url("images/Social_Footer_YouTube_SocialMedia.svg")
+                no-repeat;
+            }
+          }
+        }
+      }
+    }
+
+    .paymethods-web {
+      display: none;
+    }
+    .about {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px dashed #b5b5b5;
+      .about-text {
+        text-align: center;
+        span {
+          padding: 0 3.9px;
+          margin: 0 0.07812499622px;
+          font-size: 10px;
+          text-decoration: underline;
+          font-weight: bold;
+          line-height: 200%;
+          a {
+            color: #b5b5b5;
+          }
+        }
+      }
+    }
+
+    .about-web {
+      display: none;
+    }
+    .sponsor {
+      padding: 1.5rem 0;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px dashed #b5b5b5;
+      .sponsorLogos {
+        width: 90%;
+        justify-content: center;
+        .sponsorImg {
+          margin-left: 35px;
+          .logoimg {
+            width: 25.6%;
+            margin: 0 7px;
+          }
+        }
+      }
+    }
+    .laliga {
+      padding: 1.5rem 0;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px dashed #9c8c37;
+      .laliga-header {
+        .laliga-img {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img {
+            width: 35%;
+          }
+        }
+        .text {
+          .top {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 7px;
+            p {
+              font-size: 12px;
+              font-weight: bold;
+              color: #ffffff;
+            }
+          }
+          .bottom {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            p {
+              font-size: 12px;
+            }
+          }
+        }
+        .teams {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-top: 17px;
+          .logo-year {
+            .text {
+              font-size: 10px;
+            }
+          }
+        }
+      }
+    }
+    .lower-bottom {
+      padding: 1.5rem 0.5rem;
+      padding-bottom: 1.5rem;
+      .lower-container {
+        .lower-sponsor-logo {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+        .lower-text {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 1.5rem 0;
+          p {
+            font-size: 12px;
+            span {
+              text-decoration: underline;
+              font-weight: bold;
+              a {
+                color: #b5b5b5;
+              }
+            }
+          }
+        }
+        .lower-footer {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          p {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    .lower-bottom-final {
+      display: none;
+    }
+    .credits-bottom {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    .footer-container {
+      max-width: 1450px;
+      .desktop-view {
+        display: none;
+      }
+      .paymethods {
+        display: none;
+      }
+      .paymethods-web {
+        display: initial;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px dashed #b5b5b5;
+        .payments-top {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin: 0 10px;
+          .left {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .text {
+              font-size: 13px;
+            }
+            .logos {
+              margin-left: 10px;
+            }
+          }
+        }
+      }
+      .about {
+        display: none;
+      }
+      .about-web {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px dashed #b5b5b5;
+        margin: 0.7rem 0;
+        .left-text {
+          .about-text {
+            font-size: 12px;
+            font-weight: bold;
+            span {
+              margin: 0 10px;
+              a {
+                color: #b5b5b5;
+              }
+            }
+          }
+        }
+        .right-text {
+          .about-text {
+            font-size: 12px;
+            font-weight: bold;
+            span {
+              margin: 0 10px;
+              a {
+                color: #b5b5b5;
+              }
+            }
+          }
+        }
+      }
+      .sponsor {
+        padding-bottom: 2.5rem;
+
+        .sponsorLogos {
+          width: initial;
+          justify-content: initial;
+          .sponsorImg {
+            margin-left: initial;
+            .logoimg {
+              width: 10%;
+              margin: initial;
+              margin: 0 15.5px;
+            }
+          }
+        }
+      }
+
+      .laliga {
+        display: none;
+      }
+      .lower-bottom {
+        display: none;
+      }
+      .lower-bottom-final {
+        display: initial;
+        padding: 1.5rem 0;
+        padding-bottom: 1.5rem;
+        .lower-container {
+          margin-left: -10px;
+          .lower-left {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .left-logo-text {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin: 0 20px;
+              .text {
+                margin-left: 20px;
+                .name {
+                  font-size: 12px;
+                  text-transform: uppercase;
+                  font-weight: bold;
+                }
+                .name-laliga {
+                  color: #ffffff;
+                }
+                .year {
+                  font-size: 12px;
+                }
+              }
+            }
+          }
+          .lower-right {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            .logo {
+              margin: 0 10px;
+            }
+          }
+        }
+      }
+      .credits-bottom {
+        display: initial;
+        .credits {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin: 0 10px;
+          .lower-text {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem 0;
+            margin-left: 1px;
+            p {
+              font-size: 12px;
+              span {
+                text-decoration: underline;
+                font-weight: bold;
+                a {
+                  color: #b5b5b5;
+                }
+              }
+            }
+          }
+          .lower-footer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            p {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1150px) {
+  footer {
+    .footer-container {
+      .lower-bottom-final {
+        .lower-container {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .lower-right {
+            margin-top: initial;
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+}
